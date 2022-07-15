@@ -39,7 +39,7 @@ app.post('/', function(req,res) {
 
     const options = {
         method: "POST",
-        auth: "sarthak:1fbb13afaa906b2ee773d3f2fb2621b4-us10"
+        auth: "name:apikey"
     }
 
     const request = https.request(url, options, function(response) {
@@ -68,10 +68,3 @@ app.post("/failure", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
     console.log('Server is now running.');
 })
-
-
-// API Key
-// 1fbb13afaa906b2ee773d3f2fb2621b4-us10
-
-// List Id
-// 5a9a1a3ad4
